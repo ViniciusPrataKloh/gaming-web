@@ -9,13 +9,13 @@ export function Header(){
 
                 <div>
                     <nav>
-                        <StyledLink to={"/home"}>
+                        <StyledLink to={"/"}>
                             Home
                         </StyledLink>
                         <StyledLink to={"/aboutUs"}>
                             About us
                         </StyledLink>
-                        <StyledLink to={"/portfolio"}>
+                        <StyledLink to={"/services"}>
                             Portfolio
                         </StyledLink>
                         <StyledLink to={"/news"}>
