@@ -1,17 +1,20 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-    width: 100%;
-    max-width: 1820px;
-    margin-top: 1.25rem;
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
+    padding: 1.25rem 0;
+    /* background: #a1a1a2; */
 `
 
 export const HeaderContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* padding: 0 1.5rem; */
 
     div{
         display: flex;
@@ -24,6 +27,22 @@ export const HeaderContent = styled.div`
             display: flex;
             gap: 5.5rem;
             margin-right: 2.5rem;
+
+            a{
+                color: ${(props) => props.theme["white"]};
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+
+                border: 3px solid transparent;
+
+                &:hover{
+                    cursor: pointer;
+                    border-bottom: 3px solid ${(props) => props.theme["orange-500"]};
+                }
+            }
         }
 
         button{
@@ -39,3 +58,6 @@ export const HeaderContent = styled.div`
         }
     }
 `
+
+export const StyledLink = styled(Link)`
+`;

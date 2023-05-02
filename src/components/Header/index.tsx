@@ -1,5 +1,5 @@
 import logo from "../../assets/logo.png";
-import { HeaderContainer, HeaderContent } from "./styles";
+import { HeaderContainer, HeaderContent, StyledLink } from "./styles";
 
 export function Header(){
     return(
@@ -9,10 +9,18 @@ export function Header(){
 
                 <div>
                     <nav>
-                        <span>Home</span>
-                        <span>About us</span>
-                        <span>Portfolio</span>
-                        <span>News</span>
+                        <StyledLink to={"/home"}>
+                            Home
+                        </StyledLink>
+                        <StyledLink to={"/aboutUs"}>
+                            About us
+                        </StyledLink>
+                        <StyledLink to={"/portfolio"}>
+                            Portfolio
+                        </StyledLink>
+                        <StyledLink to={"/news"}>
+                            News
+                        </StyledLink>
                     </nav>
 
                     <button>  

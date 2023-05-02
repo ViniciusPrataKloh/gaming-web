@@ -57,5 +57,6 @@ export const Header = styled.header`
 
     img{
         margin-top: -170px;
+        z-index:-5; 
     }
 `
